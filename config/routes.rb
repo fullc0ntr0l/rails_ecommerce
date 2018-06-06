@@ -1,5 +1,7 @@
 RailsEcommerce::Application.routes.draw do
   root to: 'landing#index'
+
+  mount Admin::Engine => '/admin'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

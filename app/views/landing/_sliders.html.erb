@@ -1,0 +1,14 @@
+<% unless @sliders.empty? %>
+  <!-- Slide1 -->
+  <section class="slide1">
+    <div class="wrap-slick1">
+      <div class="slick1">
+
+        <% @sliders.each do |slider| %>
+          <%= render 'landing/components/slider_card', slider: slider %>
+        <% end %>
+
+      </div>
+    </div>
+  </section>
+<% end %>

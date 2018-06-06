@@ -1,0 +1,22 @@
+<!--
+  We render borders for cards in the center only.
+  Indexes: 1, 4, 7, 10 and so on
+-->
+<% class_names = 'flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1' %>
+<% render_border = index && ((index - 1) % 3).zero? %>
+<% class_names += ' bo2' if render_border %>
+
+<div class="<%= class_names %>">
+  <h4 class="m-text12 t-center">
+    <%= shipping.title %>
+  </h4>
+
+  <% if shipping.link.nil? %>
+    <span class="s-text11 t-center">
+      <%= shipping.description %>
+    </span>
+  <% else %>
+    <%= link_to shipping.description, shipping.link, class: 's-text11 t-center' %>
+  <% end %>
+
+</div>

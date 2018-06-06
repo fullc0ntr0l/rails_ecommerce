@@ -1,0 +1,12 @@
+<% unless @shippings.empty? %>
+  <!-- Shipping -->
+  <section class="shipping bgwhite p-t-62 p-b-46">
+    <div class="flex-w p-l-15 p-r-15">
+
+      <% @shippings.each_with_index do |shipping, index| %>
+        <%= render 'landing/components/shipping_card', shipping: shipping, index: index %>
+      <% end %>
+
+    </div>
+  </section>
+<% end %>

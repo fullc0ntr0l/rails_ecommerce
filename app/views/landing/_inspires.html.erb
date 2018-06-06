@@ -1,0 +1,20 @@
+<% unless @inspires.empty? %>
+  <!-- Blog -->
+  <section class="blog bgwhite p-t-94 p-b-65">
+    <div class="container">
+      <div class="sec-title p-b-52">
+        <h3 class="m-text5 t-center">
+          Inspire
+        </h3>
+      </div>
+
+      <div class="row">
+
+        <% @inspires.each do |inspire| %>
+          <%= render 'landing/components/inspire_card', inspire: inspire %>
+        <% end %>
+
+      </div>
+    </div>
+  </section>
+<% end %>
