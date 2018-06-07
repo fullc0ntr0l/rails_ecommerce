@@ -10,6 +10,8 @@
   <%= link_to 'Delete', @product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-button' %>
 </div>
 
-<div class="view-container">
-  <%= render 'landing/components/product_card', product: @product, index: 0 %>
+<div class="wrap-slick2">
+  <div class="slick2">
+    <%= render 'landing/components/product_card', product: @product %>
+  </div>
 </div>

@@ -10,6 +10,4 @@
   <%= link_to 'Delete', @slider, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-button' %>
 </div>
 
-<div class="view-container">
-  <%= render 'landing/components/slider_card', slider: @slider, index: 0 %>
-</div>
+<%= render 'landing/sliders' %>

@@ -13,6 +13,7 @@ module Admin
 
     def show
       @slider = Slider.find(params[:id])
+      @sliders = [@slider]
 
       respond_to do |format|
         format.html
