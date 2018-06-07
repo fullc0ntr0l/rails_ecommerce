@@ -1,1 +1,15 @@
-<div>some content</div>
+<h4>List slider items</h4>
+
+<br />
+
+<p class="notice"><%= notice %></p>
+
+<div class="action-buttons">
+  <%= link_to 'New item', new_slider_path, class: 'text-button' %>
+</div>
+
+<% @sliders.each do |slider| %>
+  <div class="side-menu">
+    <%= link_to slider.title, slider_path(slider) %>
+  </div>
+<% end %>

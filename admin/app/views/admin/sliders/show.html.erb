@@ -1,0 +1,15 @@
+<h4>View item</h4>
+
+<br />
+
+<p class="notice"><%= notice %></p>
+
+<div class="action-buttons">
+  <%= link_to 'Back', sliders_path, class: 'text-button' %>
+  <%= link_to 'Edit', edit_slider_path(@slider), class: 'text-button' %>
+  <%= link_to 'Delete', @slider, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-button' %>
+</div>
+
+<div class="view-container">
+  <%= render 'landing/components/slider_card', slider: @slider, index: 0 %>
+</div>

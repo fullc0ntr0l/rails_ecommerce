@@ -1,0 +1,15 @@
+<h4>List product items</h4>
+
+<br />
+
+<p class="notice"><%= notice %></p>
+
+<div class="action-buttons">
+  <%= link_to 'New item', new_product_path, class: 'text-button' %>
+</div>
+
+<% @products.each do |product| %>
+  <div class="side-menu">
+    <%= link_to product.title, product_path(product) %>
+  </div>
+<% end %>

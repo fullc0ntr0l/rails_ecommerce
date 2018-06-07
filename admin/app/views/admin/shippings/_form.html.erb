@@ -1,0 +1,31 @@
+<%= form_for(@shipping) do |f| %>
+  <% if @shipping.errors.any? %>
+    <div class="error_explanation">
+      <h2>
+        <%= pluralize(@shipping.errors.count, "error") %> prohibited this shipping from being saved:
+      </h2>
+
+      <ul>
+      <% @shipping.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <div class="field">
+      <%= f.text_field :title, placeholder: 'Title', autocomplete: 'off' %>
+    </div>
+    <div class="field">
+      <%= f.text_field :description, placeholder: 'Description', autocomplete: 'off' %>
+    </div>
+    <div class="field">
+      <%= f.text_field :link, placeholder: 'Url', autocomplete: 'off' %>
+    </div>
+    <div class="action-buttons">
+      <%= link_to 'Back', back_path, { class: 'text-button' } %>
+      <%= f.submit class: 'text-button' %>
+    </div>
+  </div>
+<% end %>

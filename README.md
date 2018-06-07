@@ -1,5 +1,10 @@
 # Articles task
 
+## Prepare
+
+You need to have ImageMagick installed in order to run the project.
+[Here](https://github.com/thoughtbot/paperclip/tree/v4.3.8#image-processor) are the instructions.
+
 ## Running the app
 
 1.  `bundle install`

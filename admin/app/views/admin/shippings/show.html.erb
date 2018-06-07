@@ -1,0 +1,15 @@
+<h4>View item</h4>
+
+<br />
+
+<p class="notice"><%= notice %></p>
+
+<div class="action-buttons">
+  <%= link_to 'Back', shippings_path, class: 'text-button' %>
+  <%= link_to 'Edit', edit_shipping_path(@shipping), class: 'text-button' %>
+  <%= link_to 'Delete', @shipping, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-button' %>
+</div>
+
+<div class="view-container">
+  <%= render 'landing/components/shipping_card', shipping: @shipping, index: 0 %>
+</div>

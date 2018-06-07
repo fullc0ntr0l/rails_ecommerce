@@ -13,16 +13,28 @@
               <%= link_to 'Admin Home', root_path, class: current_page?(root_path) ? 'selected_menu_item' : '' %>
             </li>
             <li>
-              <%= link_to 'Sliders', sliders_path, class: current_page?(sliders_path) ? 'selected_menu_item' : '' %>
+              <%=
+                link_to 'Sliders', sliders_path,
+                class: controller.controller_name == 'sliders' ? 'selected_menu_item' : ''
+              %>
             </li>
             <li>
-              <%= link_to 'Products', products_path, class: current_page?(products_path) ? 'selected_menu_item' : '' %>
+              <%=
+                link_to 'Products', products_path,
+                class: controller.controller_name == 'products' ? 'selected_menu_item' : ''
+              %>
             </li>
             <li>
-              <%= link_to 'Inspires', inspires_path, class: current_page?(inspires_path) ? 'selected_menu_item' : '' %>
+              <%=
+                link_to 'Inspires', inspires_path,
+                class: controller.controller_name == 'inspires' ? 'selected_menu_item' : ''
+              %>
             </li>
             <li>
-              <%= link_to 'Shippings', shippings_path, class: current_page?(shippings_path) ? 'selected_menu_item' : '' %>
+              <%=
+                link_to 'Shippings', shippings_path,
+                class: controller.controller_name == 'shippings' ? 'selected_menu_item' : ''
+              %>
             </li>
           </ul>
         </nav>

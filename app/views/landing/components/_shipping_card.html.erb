@@ -11,7 +11,7 @@
     <%= shipping.title %>
   </h4>
 
-  <% if shipping.link.nil? %>
+  <% if shipping.link.nil? or shipping.link.empty? %>
     <span class="s-text11 t-center">
       <%= shipping.description %>
     </span>

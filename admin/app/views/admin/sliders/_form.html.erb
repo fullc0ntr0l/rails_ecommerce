@@ -1,0 +1,37 @@
+<%= form_for(@slider, html: { multipart: true }) do |f| %>
+  <% if @slider.errors.any? %>
+    <div class="error_explanation">
+      <h2>
+        <%= pluralize(@slider.errors.count, "error") %> prohibited this slider from being saved:
+      </h2>
+
+      <ul>
+      <% @slider.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <div class="field">
+      <%= f.text_field :title, placeholder: 'Title', autocomplete: 'off' %>
+    </div>
+    <div class="field">
+      <%= f.text_field :promo_text, placeholder: 'Promo text', autocomplete: 'off' %>
+    </div>
+    <div class="field">
+      <%= f.text_field :button_text, placeholder: 'Button text', value: 'Shop now' %>
+    </div>
+    <div class="field">
+      <%= f.text_field :link, placeholder: 'Url', autocomplete: 'off' %>
+    </div>
+    <div class="field">
+      <%= f.file_field :image %>
+    </div>
+    <div class="action-buttons">
+      <%= link_to 'Back', back_path, { class: 'text-button' } %>
+      <%= f.submit class: 'text-button' %>
+    </div>
+  </div>
+<% end %>
