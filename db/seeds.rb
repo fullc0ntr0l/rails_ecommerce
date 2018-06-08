@@ -52,21 +52,21 @@ Product.create(
   link: 'product-detail.html', price: 165.90
 )
 
-Inspire.create(
+Inspiration.create(
   title: 'Black Friday Guide: Best Sales & Discount Codes',
   content: 'Duis ut velit gravida nibh bibendum commodo.' \
   ' Sus-pendisse pellentesque mattis augue id euismod.' \
   ' Inter-dum et malesuada fames',
   link: 'blog-detail.html'
 )
-Inspire.create(
+Inspiration.create(
   title: 'The White Sneakers Nearly Every Fashion Girls Own',
   content: 'Nullam scelerisque, lacus sed consequat laoreet,' \
   ' dui enim iaculis leo, eu viverra ex nulla in tellus.' \
   ' Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame',
   link: 'blog-detail.html'
 )
-Inspire.create(
+Inspiration.create(
   title: 'New York SS 2018 Street Style: Annina Mislin',
   content: 'Proin nec vehicula lorem, a efficitur ex.' \
   ' Nam vehicula nulla vel erat tincidunt,' \

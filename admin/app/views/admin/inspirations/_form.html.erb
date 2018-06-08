@@ -1,12 +1,12 @@
-<%= form_for(@inspire, html: { multipart: true }) do |f| %>
-  <% if @inspire.errors.any? %>
+<%= form_for(@inspiration, html: { multipart: true }) do |f| %>
+  <% if @inspiration.errors.any? %>
     <div class="error_explanation">
       <h2>
-        <%= pluralize(@inspire.errors.count, "error") %> prohibited this inspire from being saved:
+        <%= pluralize(@inspiration.errors.count, "error") %> prohibited this inspiration from being saved:
       </h2>
 
       <ul>
-      <% @inspire.errors.full_messages.each do |msg| %>
+      <% @inspiration.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

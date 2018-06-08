@@ -1,4 +1,4 @@
-class Inspire < ActiveRecord::Base
+class Inspiration < ActiveRecord::Base
   attr_accessible :content, :link, :title, :image
 
   has_attached_file :image, styles: { medium: '720x539' },

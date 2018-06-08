@@ -3,6 +3,6 @@ Admin::Engine.routes.draw do
 
   resources :sliders
   resources :products
-  resources :inspires
+  resources :inspirations
   resources :shippings
 end

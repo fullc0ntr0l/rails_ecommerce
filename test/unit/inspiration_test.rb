@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class InspireTest < ActiveSupport::TestCase
+class InspirationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

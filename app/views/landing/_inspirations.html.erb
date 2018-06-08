@@ -1,4 +1,4 @@
-<% unless @inspires.empty? %>
+<% unless @inspirations.empty? %>
   <!-- Blog -->
   <section class="blog bgwhite p-t-94 p-b-65">
     <div class="container">
@@ -10,8 +10,8 @@
 
       <div class="row">
 
-        <% @inspires.each do |inspire| %>
-          <%= render 'landing/components/inspire_card', inspire: inspire %>
+        <% @inspirations.each do |inspiration| %>
+          <%= render 'landing/components/inspiration_card', inspiration: inspiration %>
         <% end %>
 
       </div>

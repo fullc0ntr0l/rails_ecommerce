@@ -1,6 +1,6 @@
-class CreateInspires < ActiveRecord::Migration
+class CreateInspirations < ActiveRecord::Migration
   def change
-    create_table :inspires do |t|
+    create_table :inspirations do |t|
       t.string :image_url
       t.string :title
       t.text :content

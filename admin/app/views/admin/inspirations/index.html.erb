@@ -1,0 +1,15 @@
+<h4>List inspiration items</h4>
+
+<br />
+
+<p class="notice"><%= notice %></p>
+
+<div class="action-buttons">
+  <%= link_to 'New item', new_inspiration_path, class: 'text-button' %>
+</div>
+
+<% @inspirations.each do |inspiration| %>
+  <div class="side-menu">
+    <%= link_to inspiration.title, inspiration_path(inspiration) %>
+  </div>
+<% end %>

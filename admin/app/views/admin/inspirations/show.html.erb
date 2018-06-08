@@ -1,0 +1,15 @@
+<h4>View item</h4>
+
+<br />
+
+<p class="notice"><%= notice %></p>
+
+<div class="action-buttons">
+  <%= link_to 'Back', inspirations_path, class: 'text-button' %>
+  <%= link_to 'Edit', edit_inspiration_path(@inspiration), class: 'text-button' %>
+  <%= link_to 'Delete', @inspiration, method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-button' %>
+</div>
+
+<div class="view-container">
+  <%= render 'landing/components/inspiration_card', inspiration: @inspiration, index: 0 %>
+</div>

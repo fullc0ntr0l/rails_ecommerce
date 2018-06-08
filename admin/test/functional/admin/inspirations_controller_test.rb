@@ -1,7 +1,7 @@
 require 'test_helper'
 
 module Admin
-  class InspiresControllerTest < ActionController::TestCase
+  class InspirationsControllerTest < ActionController::TestCase
     # test "the truth" do
     #   assert true
     # end

@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20180607112928) do
 
-  create_table "inspires", :force => true do |t|
+  create_table "inspirations", :force => true do |t|
     t.string   "image_url"
     t.string   "title"
     t.text     "content"

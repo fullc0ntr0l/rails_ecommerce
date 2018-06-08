@@ -3,7 +3,7 @@ class LandingController < ApplicationController
   def index
     fetch_sliders
     fetch_products
-    fetch_inspires
+    fetch_inspirations
     fetch_shippings
 
     render 'landing/index'
@@ -19,8 +19,8 @@ class LandingController < ApplicationController
     @products = Product.all
   end
 
-  def fetch_inspires
-    @inspires = Inspire.all
+  def fetch_inspirations
+    @inspirations = Inspiration.all
   end
 
   def fetch_shippings
